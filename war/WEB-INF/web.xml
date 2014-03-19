@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+ 
+<welcome-file-list>
+	<welcome-file>idpBrowserVersion.jsp</welcome-file>
+</welcome-file-list>
+  
+  
+<servlet>
+	<servlet-name>ProcessLogin</servlet-name>
+	<servlet-class>controller.ProcessLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ProcessLogin</servlet-name>
+	<url-pattern>/login.do</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ProcessAddResult</servlet-name>
+	<servlet-class>controller.ProcessAddResult</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ProcessAddResult</servlet-name>
+	<url-pattern>/processAddResult.do</url-pattern>
+</servlet-mapping>
+  
+<servlet>
+	<servlet-name>ProcessEditUserSetting</servlet-name>
+	<servlet-class>controller.ProcessEditUserSetting</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ProcessEditUserSetting</servlet-name>
+	<url-pattern>/processEditUserSetting.do</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ProcessAddUser</servlet-name>
+	<servlet-class>controller.ProcessAddUser</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ProcessAddUser</servlet-name>
+	<url-pattern>/processAddUser.do</url-pattern>
+</servlet-mapping>
+  
+<servlet>
+	<servlet-name>ProcessAddNumberToMatchCart</servlet-name>
+	<servlet-class>controller.ProcessAddNumberToMatchCart</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ProcessAddNumberToMatchCart</servlet-name>
+	<url-pattern>/processAddNumberToMatchCart.do</url-pattern>
+</servlet-mapping>  
+  
+<servlet>
+	<servlet-name>ProcessLogout</servlet-name>
+	<servlet-class>controller.ProcessLogout</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ProcessLogout</servlet-name>
+	<url-pattern>/processLogout.do</url-pattern>
+</servlet-mapping>    
+
+<servlet>
+	<servlet-name>ProcessRemoveNumberFromMatchCart</servlet-name>
+	<servlet-class>controller.ProcessRemoveNumberFromMatchCart</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ProcessRemoveNumberFromMatchCart</servlet-name>
+	<url-pattern>/processRemoveNumberFromMatchCart.do</url-pattern>
+</servlet-mapping>    
+
+<servlet>
+	<servlet-name>ProcessSaveMatchCart</servlet-name>
+	<servlet-class>controller.ProcessSaveMatchCart</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ProcessSaveMatchCart</servlet-name>
+	<url-pattern>/processSaveMatchCart.do</url-pattern>
+</servlet-mapping>    
+
+<servlet>
+	<servlet-name>ProcessAddNumberToBetCart</servlet-name>
+	<servlet-class>controller.ProcessAddNumberToBetCart</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ProcessAddNumberToBetCart</servlet-name>
+	<url-pattern>/processAddNumberToBetCart.do</url-pattern>
+</servlet-mapping>    
+
+<servlet>
+	<servlet-name>ProcessRemoveNumberFromBetCart</servlet-name>
+	<servlet-class>controller.ProcessRemoveNumberFromBetCart</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ProcessRemoveNumberFromBetCart</servlet-name>
+	<url-pattern>/processRemoveNumberFromBetCart.do</url-pattern>
+</servlet-mapping>   
+
+<servlet>
+	<servlet-name>ProcessSaveBetCart</servlet-name>
+	<servlet-class>controller.ProcessSaveBetCart</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ProcessSaveBetCart</servlet-name>
+	<url-pattern>/processSaveBetCart.do</url-pattern>
+</servlet-mapping>    
+
+</web-app>
